@@ -5,7 +5,12 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		
+		$this->load->view("template/loader",
+			array(
+			"title" => "Home Page",
+			"content" => "home/content",
+			)
+		);
 	}
 
 	public function about()
